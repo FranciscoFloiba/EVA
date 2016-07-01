@@ -58,7 +58,7 @@ public class Academia extends javax.swing.JDialog {
 
         lcodigo.setText("ID");
         getContentPane().add(lcodigo);
-        lcodigo.setBounds(40, 190, 120, 14);
+        lcodigo.setBounds(40, 190, 120, 16);
 
         nombre.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         nombre.setMinimumSize(new java.awt.Dimension(8, 24));
@@ -68,7 +68,7 @@ public class Academia extends javax.swing.JDialog {
 
         ldescri.setText("Nombre");
         getContentPane().add(ldescri);
-        ldescri.setBounds(230, 190, 310, 14);
+        ldescri.setBounds(230, 190, 310, 16);
 
         boton_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/GuardarTodo.png"))); // NOI18N
         boton_guardar.setMnemonic('G');
@@ -102,14 +102,14 @@ public class Academia extends javax.swing.JDialog {
 
         lcarrera.setText("Carrera");
         getContentPane().add(lcarrera);
-        lcarrera.setBounds(40, 100, 80, 14);
+        lcarrera.setBounds(40, 100, 80, 16);
 
         getContentPane().add(carrera);
         carrera.setBounds(40, 130, 500, 28);
 
         lnstitucion.setText("Institución");
         getContentPane().add(lnstitucion);
-        lnstitucion.setBounds(40, 20, 100, 14);
+        lnstitucion.setBounds(40, 20, 100, 16);
 
         institucion.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -119,8 +119,8 @@ public class Academia extends javax.swing.JDialog {
         getContentPane().add(institucion);
         institucion.setBounds(40, 50, 500, 28);
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-602)/2, (screenSize.height-404)/2, 602, 404);
+        setSize(new java.awt.Dimension(602, 404));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_guardarActionPerformed
